@@ -1,12 +1,19 @@
 {
-	"manifest_version": 2,
-	"name": "Not yet, AV1",
-	"version": "1.0.0",
-	"description": "Extremely lightweight Chrome plugin to disable AV1 on YouTube and other sites.",
+	"manifest_version": 3,
+	"name": "Not yet AV1 (itpropmn07)",
+	"version": "2.0.0",
+	"description": "Extremely lightweight Firefox Addon to disable AV1 on YouTube and other sites.",
 	"icons": {
 		"16": "icons/16.png",
 		"48": "icons/48.png",
+		"96": "icons/96.png",
 		"128": "icons/128.png"
+	},
+	"browser_specific_settings": {
+  		"gecko": {
+    		"id": "NotYetAV1@itpropmn07.com",
+    		"strict_min_version": "109.0"
+ 		 }
 	},
 	"content_scripts": [
 		{
@@ -23,5 +30,8 @@
 			"all_frames": true
 		}
 	],
-	"homepage_url": "https://github.com/Shimmermare/NotYetAV1"
+	"action": {
+		"default_icon": "icons/48.png"
+  	},
+	"homepage_url": "https://github.com/itpropmn07/NotYetAV1"
 }
